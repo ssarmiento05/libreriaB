@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=DM+Serif+Display&family=Teko&display=swap');
+body{
+
+font-family:  'Tahoma';
+background:#FFCD60;
+
+}
+
+nav{
+position: relative;
+margin: 27px auto 0;
+width: 30%;
+height: 7%;
+background: #fafafa;
+border-radius:8px ;
+font-size: 0;
+box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+text-align: center ;
+
+
+}
+h1{
+margin-left: 45%;
+color: rgb(119, 118, 118);
+margin-bottom:5% ;
+}
+
+nav a{
+
+font-size: 15px;
+text-transform: uppercase;
+color: #0e0d0d;
+text-decoration: none;
+line-height: 50px;
+position: relative;
+z-index: 1;
+display: inline-block;
+text-align: center;
+
+
+}
+
+nav .animation{
+	position: absolute;
+	height: 5px;
+	bottom: 0;
+	z-index:0 ;
+	background: #6e6e6e;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+
+a:nth-child(1){
+width: 120px;
+}
+nav .start-home,a:nth-child(1):hover~.animation{
+width: 120px;
+left: 8%;
+}
+
+a:nth-child(2){
+width: 120px;
+}
+nav .start-acerca,a:nth-child(2):hover~.animation{
+width: 120px;
+left: 29%;
+}
+a:nth-child(3){
+width: 120px;
+}
+nav .start-ideas,a:nth-child(3):hover~.animation{
+width: 120px;
+left: 51%;
+}
+a:nth-child(4){
+width: 120px;
+
+}
+nav .start-formulario,a:nth-child(4):hover~.animation{
+width: 120px;
+left:71%;
+}
+
+
+
+.container {
+
+	width:100% ;
+	height: 50%;
+	background-color:#FFE09D ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box{
+width: 350px;
+height: 490px;
+background-color:#f8f8ff ;
+border-radius: 10px;
+box-shadow:2px 10px 12px rgb(3, 3, 3) ;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+box-sizing: border-box;
+margin: 20px 30px;
+}
+
+.model{
+	height: 350px;
+	max-height: 100%;
+	max-height: 100%;
+
+}
+.details{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+
+}
+
+.details p{
+	font-family: calibri;
+	font-weight: bold;
+	color: #dfdfee;
+	text-align: center;
+
+}
+.marvel{
+	color: #f6e928;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: bebas kai;
+	font-size: 25px;
+	}
+	.logo{
+		height: 10px;
+	}
+	.box:hover{
+
+		background-color:#6e6e6e ;
+		transform-style: preserve-3d;
+		transform: scale(1.02);
+		transition: all ease 0.3s;
+	}
+	.box:hover .marvel{
+
+			color: #050505;
+			transition: all ease 0.5s;
+	}
+
+	.animationstart-home{
+
+		background: #6e6e6e;
+	}
+
+
+	footer{
+		position: sticky;
+		max-width: 100%;
+		background-color: #FFE09D;
+		min-height: 100px;
+		padding: 20px 50px;
+		display: flex;
+		margin-top: 15%;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	footer .social_icon,
+	footer .menu {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 10px 0;
+		flex-wrap: wrap;
+	}
+	footer .social_icon li,
+	footer .menu li {
+		list-style: none;
+	}
+	footer .social_icon li a{
+		font-size: 2em;
+		color:rgb(61, 59, 59) ;
+		margin: 0 10px;
+		display: inline-block;
+		transition: 0.5s;
+	}
+	footer .social_icon li a:hover{
+		transform: translateY(-10px);
+	}
+	footer .menu li a {
+		font-size: 1.2em;
+		color:#fff ;
+		margin: 0 10px;
+		display: inline-block;
+		transition: 0.5s;
+		text-decoration: none;
+		opacity: 0.75;
+	}
+	footer .menu li a:hover {
+		opacity: 1;
+	}
+	footer p {
+		color: #fff;
+		text-align: center;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		font-size: 1.1em;
+	}
+
+	
+
+	footer .wave {
+		position: absolute;
+		top: -100px;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		background:url(wave2.png);
+		background-size: 1000px 100px;
+	}
+	footer .wave#wave1 {
+		z-index: 1000;
+		opacity: 1;
+		bottom: 0;
+		animation: animateWave 4s linear infinite;
+	}
+	footer .wave#wave2 {
+		z-index: 999;
+		opacity: 0.5;
+		bottom: 10px;
+		animation: animateWave_02 4s linear infinite;
+	}
+	footer .wave#wave3 {
+		z-index: 1000;
+		opacity: 0.2;
+		bottom: 15px;
+		animation: animateWave 3s linear infinite;
+	}
+	footer .wave#wave4 {
+		z-index: 999;
+		opacity: 0.7;
+		bottom: 20px;
+		animation: animateWave_02 3s linear infinite;
+	}
+	
+	@keyframes animateWave {
+		0%{
+			background-position-x: 1000px;
+		}
+		100%{
+			background-position-x: 0;
+		}
+	}
+	@keyframes animateWave_02 {
+		0%{
+			background-position-x: 1000px;
+		}
+		100%{
+			background-position-x: 0;
+		}
+	}
